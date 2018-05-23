@@ -2,31 +2,19 @@
 <html>
 <head>
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-      <title>Hello, world!</title>
-    </head>
-    <body>
-      <h1>Hello, world!</h1>
-  
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-  </html>
-  <title>Sam's Sarnies</title>
-
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <title>Sam's Sarnies</title>
 </head>
-
 <body>
-  <div class='jumbotron'>
-
-    <h1>Healthy sandwiches for your team</h1>
-
-    <img src='images/sandwich.png'>
-
+  <div class ="container">
+    <div class='jumbotron'>
+      <div class="row">
+        <div class="col-sm-8">
+          <h1>Healthy sandwiches for your team</h1>
+        </div>   
+        <div class ="col-sm-4">
+            <img src='images/sandwich.png'>
+        </div> 
+      </div>
     <form role='form'>
       <label for="email">Find out more</label>
       <input type="text" name="email" >
@@ -35,21 +23,31 @@
   </div>
 
   <div id="buzz">
-    <h2><small>The Buzz</small><br />What are people saying?</h2>
-    <div>
-      <img src='images/person.jpg'>
-      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-      <small>Mr Smith, Professional sandwich taster</small>
+    <div class ="container">  
+      <h2><small>The Buzz</small><br />What are people saying?</h2>
+      <div class="row">
+        <div class='col-sm-4'>
+          <img src='images/person.jpg'>
+          <blockquote class="blockquote">
+          <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+          <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+        </div>
+        <div class='col-sm-4'>
+          <img src='images/person.jpg'>
+          <blockquote class="blockquote">
+          <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
+          <small>Miss McAdam, CEO Workplace Analytics</small>
+        </blockquote>
+        </div>                
+        <div class='col-sm-4'>
+          <img src='images/person.jpg'>
+          <blockquote class="blockquote">
+          <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
+        </blockquote>
+        </div>
+      </div> 
     </div>
-    <div>
-      <img src='images/person.jpg'>
-      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
-      <small>Miss McAdam, CEO Workplace Analytics</small>
-    </div>
-    <div>
-      <img src='images/person.jpg'>
-      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
-    </div> 
   </div>
 
 
@@ -67,8 +65,12 @@
       <button class='btn-pinterest'>Pinterest</button>
     </div>
   </div>
-
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
 </body>
 
 
